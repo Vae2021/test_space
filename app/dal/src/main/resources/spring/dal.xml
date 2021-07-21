@@ -1,0 +1,40 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:sofa="http://schema.alipay.com/sofa/schema/slite"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://schema.alipay.com/sofa/schema/slite http://schema.alipay.com/sofa/slite.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+<!--    &lt;!&ndash;单库单表数据源&ndash;&gt;-->
+<!--    <bean id="singleDataSource" class="com.alipay.zdal.client.jdbc.ZdalDataSource"-->
+<!--          init-method="init" destroy-method="close">-->
+<!--        &lt;!&ndash;这里填写应用名，当前填写的sofaappcenter用于连接示例数据库，实际使用时填写${spring.application.name}换成当前应用&ndash;&gt;-->
+<!--        <property name="appName" value="sofaappcenter" />-->
+<!--        &lt;!&ndash;这里填写应用数据源，当前填写的zdaldemo_ds用于连接示例数据库，实际使用时换成应用自身的数据源&ndash;&gt;-->
+<!--        <property name="appDataSourceName" value="zdaldemo_ds" />-->
+<!--        &lt;!&ndash;这里填写应用数据源版本，当前填写的sofabootdemo只是用于连接示例数据库，实际使用时换成应用自身的数据源版本&ndash;&gt;-->
+<!--        <property name="version" value="sofabootdemo" />-->
+<!--    </bean>-->
+
+<!--    &lt;!&ndash;分库分表数据源&ndash;&gt;-->
+<!--    <bean id="shardingDataSource" class="com.alipay.zdal.client.jdbc.ZdalDataSource"-->
+<!--          init-method="init" destroy-method="close">-->
+<!--        &lt;!&ndash;这里填写应用名，当前填写的sofaappcenter用于连接示例数据库，实际使用时填写${spring.application.name}换成当前应用&ndash;&gt;-->
+<!--        <property name="appName" value="sofaappcenter" />-->
+<!--        &lt;!&ndash;这里填写应用数据源，当前填写的zdaldemo_ds用于连接示例数据库，实际使用时换成应用自身的数据源&ndash;&gt;-->
+<!--        <property name="appDataSourceName" value="zdaldemo_sharding_ds" />-->
+<!--        &lt;!&ndash;这里填写应用数据源版本，当前填写的sofabootdemo只是用于连接示例数据库，实际使用时换成应用自身的数据源版本&ndash;&gt;-->
+<!--        <property name="version" value="sofabootdemo" />-->
+<!--    </bean>-->
+
+<!--    &lt;!&ndash;单库单表事务管理器&ndash;&gt;-->
+<!--    <bean id="txManagerForSingle" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">-->
+<!--        <property name="dataSource" ref="singleDataSource"/>-->
+<!--    </bean>-->
+
+<!--    &lt;!&ndash;分库分表事务管理器&ndash;&gt;-->
+<!--    <bean id="txManagerForSharding" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">-->
+<!--        <property name="dataSource" ref="shardingDataSource"/>-->
+<!--    </bean>-->
+</beans>
